@@ -1,0 +1,131 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(62, 62, 63);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+}
+.App{
+max-width: 800px;
+margin:0 auto;
+background: rgb(216, 211, 211);
+border-radius: 2px;
+padding:15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+h1{
+  color: #032d42;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.expense-tracker{
+  display: grid;
+  grid-template-columns:2fr 1fr 1f auto;
+  gap:15px;
+  margin-bottom: 30px;
+  align-items: end;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  color: #1a082f;
+  margin-bottom: 8px;
+  font-weight:600;
+}
+input,select{
+  padding: 12px;
+  border-radius: 8px;
+  border:1px solid #ac4f4f;
+  font-size:16px;
+  transition: border-color 0.3s;
+}
+input:focus,select:focus{
+  border-color: #c40c0c;
+  outline:none;
+}
+button{
+  background: #070202;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size:16px;
+  cursor:pointer;
+transition :background-color 0.3s;
+}
+button:hover{
+  background-color: #eee7ef;
+}
+.filters{
+  margin-bottom: 30px;
+  display: flex;
+  gap:15px;
+  align-items: center;
+}
+.expense-list {
+  max-height: 400px;
+  overflow: auto;
+}
+.expense-item {
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px;
+border-radius: 8px;
+margin-bottom: 10px;
+background: #0b1e21;
+}
+
+.expense-info{
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.expense-description{
+  font-weight:600;
+  color:#4a494a
+}
+.expense-category{
+  font-size:14px;
+  color:#e9e3e3;
+  background:#8d635f;
+  padding:4px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+.expense-amount{
+  font-weight:700;
+  font-size:18px;
+  color:#0bdb46;
+}
+.total-section{
+  margin-top: 20px;
+  text-align: right;
+  font-size:20px;
+  font-weight:700;
+  color:#0a0803;
+}
+.total-amount{
+  margin-left: 10px;
+  font-size: 2rem;
+  color:#b1c7e3;
+}
+@media (max-width:600px){
+  .expense-tracker{
+    grid-template-columns:1fr;
+  }
+  .filters{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

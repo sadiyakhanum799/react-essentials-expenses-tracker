@@ -1,0 +1,51 @@
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:rgb(54, 1, 1);
+  color: #f1eded;
+}
+.App{
+  max-width:800px;
+  margin:0 auto;
+  padding:20px;
+
+}
+header{
+  background: linear-gradient(135deg,rgb(92, 92, 2));
+  color:white;
+  text-align:center;
+ padding: 30px;
+ border-radius:10px;
+ margin-bottom: 30px;
+ box-shadow:0 40px 6x rgba(0 0 0,0.1);
+}
+header h1{
+  font-size:2.5rem;
+  margin-bottom:10px;
+}
+header p{
+  font-size: 1.1rem;
+  opacity:0.9;
+}
+ .pizza-order-form{
+ background: rgb(15, 11, 11);
+ padding:34px;
+ border-radius:10px;
+ box-shadow: 0 20px 10px rgba(0 0 0,0.1);
+
+}
+.pizza-order-form h2{
+  color:#be4f4f;
+  margin-bottom: 30px;
+  text-align:center;
+
+}
+section{
+  margin-bottom: 30px;
+  padding:20px;
+  border-radius :8px;
+}
