@@ -1,8 +1,5 @@
 
 # Expenses Tracker
-
+site is live at :- 
 https://sadiyakhanum799.github.io/react-essentials-expenses-tracker/
-
-<div align="center">
-  <img src="./screenshort1.png" alt="Expenses Tracker" width="600">
-</div>
+deployed by sadiya khanum
